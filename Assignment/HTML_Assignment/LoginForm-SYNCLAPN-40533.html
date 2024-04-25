@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>Login Form</title>
+    </head>
+    <body>
+        <fieldset>
+            <fieldset style="text-align: center;"><b>Login Form</b></fieldset>
+        <form>
+            <p>
+            Name
+            <input type="text" name="firstname" placeholder="First Name">
+            <input type="text" name="lastname" placeholder="Last Name">
+            </p>
+            <p>
+                <label for="mail">Email</label>
+                <input type="email" name="email" placeholder="Email" id="mail">
+            </p>
+            <p>
+                <label for="phn">Phone Number</label>
+                <input type="number" name="phn" placeholder="10-digit number" id="phn">
+            </p>
+            <p>
+                <label for="pw">Password</label>
+                <input type="password" name="pw" placeholder="password" id="pw">
+            </p>
+            <p>
+                Gender<br>
+                <input type="radio" name="gender" value="male">Male<br>
+                <input type="radio" name="gender" value="female">Female<br>
+                <input type="radio" name="gender" value="others">Not wish to Disclose
+            </p>
+            <p>
+                Address :<br>
+                <textarea type="message" name="message" cols="25" rows="5"></textarea>
+            </p>
+            <p>
+                <label for="dob">Date of Birth</label><br>
+                <input type="date" name="dob" id="dob">
+            </p>
+            <p>
+                <label for="time">Time</label><br>
+                <input type="time" name="time" id="time">
+            </p>
+            <p>
+                Language<br>
+                
+                <input type="checkbox" name="lan[]" value="Tamil" id="tam"><label for="tam">Tamil</label><br>
+                <input type="checkbox" name="lan[]" value="English" id="eng"><label for="eng">English</label><br>
+                <input type="checkbox" name="lag[]" value="French" id="fre"><label for="fre">French</label>
+            </p>
+            <p>
+                Select your field of intrest:<br>
+                <select name="intrest" id="intrest" multiple>
+                    <option value="music">Music</option>
+                    <option value="cycling">Cycling</option>
+                    <option value="Batmiton">Batmiton</option>
+                </select>
+
+            </p>
+            <p>
+                Upload your Photo<br>
+                <input type="file" name="photo">
+            </p>
+            <input type="button" name="submit" value="submit">
+            <input type="button" name="reset" value="reset">
+        </form>
+    </fieldset>
+    </body>
+</html>
